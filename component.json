@@ -1,0 +1,6 @@
+{
+  "name": "fetch",
+  "repo": "zheneva/fetch",
+  "scripts": ["index.js"],
+  "version": "0.0.1"
+}
