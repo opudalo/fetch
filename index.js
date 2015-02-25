@@ -1,11 +1,17 @@
-module.exports = function(url) {
+export default function(url, onload) {
+  if (!url) return
   setTimeout(fetch, 1)
-  
+
   function fetch() {
-    var d = document, f = d.getElementsByTagName('script')[0], s = d.createElement('script')
-    s.type = 'text/javascript'
-    s.async = true
-    s.src = url
-    f.parentNode.insertBefore(s, f)
+    var doc = document
+      , get = doc.getElementsByTagName
+      , el = get('script')[0] || get('head')[0].firstChild
+      , script = doc.createElement('script')
+      
+    script.type = 'text/javascript'
+    script.async = true
+    onload && script.onload = onload
+    script.src = url
+    el.parentNode.insertBefore(script, el)
   }
 }
