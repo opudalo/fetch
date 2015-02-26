@@ -10,7 +10,7 @@ export default function(url, onload) {
       
     script.type = 'text/javascript'
     script.async = true
-    onload && script.onload = onload
+    if (onload) script.onload = onload
     script.src = url
     el.parentNode.insertBefore(script, el)
   }
