@@ -4,8 +4,7 @@ export default function(url, onload) {
 
   function fetch() {
     var doc = document
-      , get = doc.getElementsByTagName
-      , el = get('script')[0] || get('head')[0].firstChild
+      , el = doc.querySelector('script') || doc.querySelector('head').firstChild
       , script = doc.createElement('script')
       
     script.type = 'text/javascript'
