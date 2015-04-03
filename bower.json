@@ -1,8 +1,17 @@
 {
   "name": "fetch",
-  "description": "Simple script fetching component",
-  "main": "index.js",
-  "version": "0.0.2",
+  "version": "1.0.0",
+  "description": "fetch micro library",
+  "authors": [
+    "Eugene Chechurin <e.chechurin@gmail.com> (https://github.com/opudalo)"
+  ],
+  "main": "lib/index.js",
+  "license": "MIT",
+  "homepage": "https://github.com/opudalo/fetch",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
   "dependencies": {}
 }
-
