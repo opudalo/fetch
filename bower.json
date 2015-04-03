@@ -1,6 +1,6 @@
 {
   "name": "fetch",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "fetch micro library",
   "authors": [
     "Eugene Chechurin <e.chechurin@gmail.com> (https://github.com/opudalo)"
